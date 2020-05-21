@@ -1,0 +1,9 @@
+課題14
+1,
+select name from product where price >= 100;
+
+2,
+select location from product natural join factory where production >= 10 and name = "television";
+
+3,
+select factory_id, name from product natural join (factory inner join warehouse on factory.product_id = warehouse.product_id) where warehouse.location = "Sendai" and stock = 5;
